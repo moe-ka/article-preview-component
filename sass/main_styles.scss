@@ -111,6 +111,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  border-radius: 0 0 1rem;
   .avatar{
     width: 90%;
     img{
@@ -125,6 +126,21 @@
     }
     
   }
+}
+
+.link-wrapper{
+  display: flex;
+  position: absolute;
+  width: 50%;
+  justify-content: space-evenly;
+  opacity: 0;
+  z-index: -1;
+
+  span{
+    color: var(--LightGrayishBlue);
+    letter-spacing: .5rem;
+  }
+
 }
 
 // pop up
@@ -237,6 +253,9 @@
     .desc {
       font-size: 13.8px;
     }
+  }
+  .link-wrapper{
+    width: 60%;
   }
 }
 
